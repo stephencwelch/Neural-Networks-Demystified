@@ -126,7 +126,6 @@ class trainer(object):
         self.N.setParams(params)
         cost = self.N.costFunction(X, y)
         grad = self.N.computeGradients(X,y)
-        
         return cost, grad
         
     def train(self, X, y):
