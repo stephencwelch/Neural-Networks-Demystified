@@ -33,7 +33,7 @@ class Neural_Network(object):
         self.W2 = np.random.randn(self.hiddenLayerSize,self.outputLayerSize)
         
     def forward(self, X):
-        #Propogate inputs though network
+        #Propagate inputs through network
         self.z2 = np.dot(X, self.W1)
         self.a2 = self.sigmoid(self.z2)
         self.z3 = np.dot(self.a2, self.W2)
